@@ -1,0 +1,58 @@
+To solve this problem, we need to determine whether Alice's score 
+𝑋
+X is at least twice Bob's score 
+𝑌
+Y. If it is, Alice is happy, and we should print "Yes"; otherwise, we should print "No".
+
+Solution Explanation
+Input: Read two integers, 
+𝑋
+X (Alice's score) and 
+𝑌
+Y (Bob's score).
+Comparison: Check if 
+𝑋
+≥
+2
+×
+𝑌
+X≥2×Y.
+Output:
+Print "Yes" if 
+𝑋
+≥
+2
+×
+𝑌
+X≥2×Y.
+Print "No" if 
+𝑋
+<
+2
+×
+𝑌
+X<2×Y.
+Constraints
+The constraints 
+1
+≤
+𝑋
+,
+𝑌
+≤
+100
+1≤X,Y≤100 ensure that the input values are within a manageable range and can be processed efficiently.
+
+Implementation
+Here's the Python code to solve this problem:
+
+python
+
+# Read input values
+X, Y = map(int, input().strip().split())
+
+# Determine if Alice is happy
+if X >= 2 * Y:
+    print("Yes")
+else:
+    print("No")
